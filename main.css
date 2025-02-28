@@ -1,3 +1,40 @@
+ /* Globales*/
+ @font-face {
+    font-family: "dobrafont-bold";
+    src: url("fonts/dobra-bold.otf");
+}
+@font-face {
+    font-family: "dobrafont-light";
+    src: url("fonts/dobra-light.otf");
+}
+@font-face {
+    font-family: "dobrafont-valentines";
+    src: url("fonts/Strawberry-Blossom.otf");
+}
+
+.dobrafont-light{
+    font-family: "Skyfont-light" !important;
+}
+
+.dobrafont-light-b{
+    font-family: "Skyfont-light" !important;
+    font-weight: bold;
+}
+
+.dobrafont-bold{
+    font-family: "Skyfont-bold" !important;
+
+}
+
+.filter-black-grey-empty{
+    filter: grayscale() !important;
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+}
+
+.filter-black-grey{
+    filter: grayscale() !important;
+}
 .main-container {
     max-width: 100%;
     display: flex;
@@ -36,6 +73,11 @@
 }
 .dsp-flex {
     display: flex;
+}
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .flex-center-column {
     display: flex;
@@ -602,52 +644,74 @@
         font-size: 8rem !important;
     }
 }
-.text-black{
-    color: #000 !important;
+.background-cyberMonday{
+    /* background-color: #d11af7 !important; */
+    background-color: #ff00cb !important;
 }
-.text-white{
-    color: #fff !important;
-}
-.text-grayclear{
-    color: #eef0f5 !important;
-}
-.text-tricolor{
-    color: #000;
-    background: linear-gradient(90deg, rgba(0,115,54,1) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 70%, rgba(255,0,0,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.text-inherit{
-    color: inherit !important;
-}
-.text-transparent{
-    color: transparent !important;
-}
-.text-gold{
-    color: #ffd700 !important;
-}
-.background-black{
-    background-color: #000 !important;
+
+.background-red{
+    background-color: red !important;
 }
 .background-white{
     background-color: #fff !important;
 }
+.background-blue{
+    background-color: #0099cc !important;
+}
 .background-grayclear{
     background-color: #eef0f5 !important;
 }
+.background-darkblue{
+    background-color: #002C55 !important;
+}
+.background-darkgray{
+    background-color: #4d4d4d !important;
+}
+.background-orangered{
+    background-color: #ff4c4c !important;
+}
+.background-yellow{
+    background-color: #f7e921 !important;
+}
+.background-grey{
+    background-color: #808080 !important;
+}
+.background-green{
+    background-color: #03bd3c !important;
+}
 .background-tricolor{
+    /* background-color:  !important; */
+    /* background: rgb(0,115,54) !important; */
     background: linear-gradient(90deg, rgba(0,115,54,1) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 70%, rgba(255,0,0,1) 100%) !important;
 }
 .background-inherit{
-    background-color: inherit !important;
+    background-color: inherit;
 }
 .background-transparent{
-    background-color: transparent !important;
+    background-color: transparent;
 }
 .background-gold{
     /* For higlights label */
     text-shadow: 4px 4px 2px rgba(0,0,0,0.6) !important;
-    background-image: url('../images/Dorado.jpg') !important;
+    background-image: url('images/Dorado.jpg') !important;
+    background-position:left;
+    background-size: contain;
+}
+.background-valentines{
+    /* For higlights label */
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6) !important;
+    background-image: url('images/valentines-texture.png') !important;
+    background-position:left;
+    background-size: contain;
+}
+.background-cvalentines{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(238,240,245,1) 0%, rgba(189,229,255,1) 30%, rgba(189,229,255,1) 50%, rgba(189,229,255,1) 80%, rgba(255,255,255,1) 100%);
+}
+.background-clouds{
+    /* For higlights label */
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6) !important;
+    background-image: url('images/modal-home/back-clouds.jpg') !important;
     background-position:left;
     background-size: contain;
 }
@@ -658,13 +722,126 @@
 .border-white{
     border-color: #fff !important;
 }
+
+.border-cyberMonday{
+    /* border-color: #d11af7 !important; */
+    border-color: #ff00cb !important;
+}
+
+.border-red{
+    border-color: red !important;
+}
+.border-white{
+    border-color: #fff !important;
+}
+.border-blue{
+    border-color: #0099cc !important;
+}
 .border-grayclear{
     border-color: #eef0f5 !important;
 }
-.border-tricolor{
-    border: 1px solid #000;
-    border-image: linear-gradient(90deg, rgba(0,115,54,1) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 70%, rgba(255,0,0,1) 100%);
-    border-image-slice: 1;
+.border-darkblue{
+    border-color: #002C55 !important;
+}
+.border-darkgray{
+    border-color: #4d4d4d !important;
+}
+.border-orangered{
+    border-color: #ff4c4c !important;
+}
+.border-yellow{
+    border-color: #f7e921 !important;
+}
+.border-grey{
+    border-color: #808080 !important;
+}
+.border-green{
+    border-color: #03bd3c !important;
+}
+.border-inherit{
+    border-color: inherit;
+}
+.border-transparent{
+    border-color: transparent;
+}
+
+.to-uppercase{
+    text-transform: uppercase;
+}
+
+.to-lowercase{
+    text-transform: lowercase;
+}
+
+.font-white{
+    color: #fff;
+}
+
+.font-red{
+    color: red !important;
+}
+
+.font-cyberMonday{
+    /* color: #d11af7 !important; */
+    color: #ff00cb !important;
+}
+
+.font-gold{
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.1) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-image: url('images/Dorado.jpg') !important;
+    background-position: center !important;
+    background-size: contain !important;
+}
+.font-valentines{
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.1) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-image: url('images/valentines-texture.png') !important;
+    background-position: center !important;
+    background-size: contain !important;
+}
+.font-clouds{
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.1) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-image: url('images/modal-home/back-clouds.jpg') !important;
+    background-position: center !important;
+    background-size: contain !important;
+}
+
+.font-black{
+    color: #000 !important;
+}
+
+.font-white{
+    color: #fff;
+}
+
+.font-blue{
+    color: #0099cc;
+}
+.font-grayclear{
+    color: #eef0f5;
+}
+.font-darkblue{
+    color: #002C55;
+}
+.font-darkgray{
+    color: #4d4d4d;
+}
+.font-orangered{
+    color: #ff4c4c;
+}
+.font-yellow{
+    color: #f7e921;
+}
+.font-grey{
+    color: #808080;
+}
+.font-green{
+    color: #03bd3c;
 }
 .border-inherit{
     border-color: inherit !important;
@@ -699,6 +876,24 @@
 .padding-lg{
     padding: 50px !important;
 }
+.padding-up-sm {
+    padding-top: 15px !important;
+}
+.padding-up-st {
+    padding-top: 30px !important;
+}
+.padding-up-lg {
+    padding-top: 50px !important;
+}
+.padding-dn-sm {
+    padding-bottom: 15px !important;
+}
+.padding-dn-st {
+    padding-bottom: 30px !important;
+}
+.padding-dn-lg {
+    padding-bottom: 50px !important;
+}
 .padding-up-dn-sm {
     padding: 15px 0;
 }
@@ -726,6 +921,24 @@
 .margin-lg{
     margin: 50px !important;
 }
+.margin-up-sm{
+    margin-top: 15px !important;
+}
+.margin-up-st{
+    margin-top: 30px !important;
+}
+.margin-up-lg{
+    margin-top: 50px !important;
+}
+.margin-dn-sm{
+    margin-bottom: 15px !important;
+}
+.margin-dn-st{
+    margin-bottom: 30px !important;
+}
+.margin-dn-lg{
+    margin-bottom: 50px !important;
+}
 .margin-up-dn-sm {
     margin: 15px 0;
 }
@@ -747,3 +960,4 @@
 @media (max-width: 768px) {
 
 }
+

@@ -1,7 +1,7 @@
  /* Globales*/
  @font-face {
     font-family: "dobrafont-bold";
-    src: url("fonts/dobra-bold.otf");
+    src: url("assets/fonts/dobra-bold.otf");
 }
 @font-face {
     font-family: "dobrafont-light";
@@ -806,7 +806,7 @@
     text-shadow: 4px 4px 2px rgba(0,0,0,0.1) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
-    background-image: url('assets/images/back-clouds.jpg') !important;
+    background-image: url('assets/images/modal-home/back-clouds.jpg') !important;
     background-position: center !important;
     background-size: contain !important;
 }
@@ -960,4 +960,3 @@
 @media (max-width: 768px) {
 
 }
-

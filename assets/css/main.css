@@ -250,7 +250,7 @@
 .width-5 {
     width: 5%;
 }
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .sc-container {
         width: calc(100% - 5%);
     }

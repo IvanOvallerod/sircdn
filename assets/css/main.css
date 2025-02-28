@@ -254,7 +254,19 @@
     .sc-container {
         width: calc(100% - 5%);
     }
-    .justify-cente-omb {
+    .flex-center-column-omb {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    }
+    .flex-center-row-omb {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .justify-center-omb {
         justify-content: center !important;
     }
     .justify-start-omb {
